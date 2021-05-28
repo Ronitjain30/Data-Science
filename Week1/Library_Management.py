@@ -1,6 +1,5 @@
 import pickle
 import sys
-from typing import ValuesView
 
 class Book:
     def __init__(self, books_dictionary):
