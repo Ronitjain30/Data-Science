@@ -15,10 +15,10 @@ matrix = np.array(matrix_values).reshape(rows_and_columns, rows_and_columns)
 print("Input Matrix :-")
 print(matrix)
 
-array_of_diagonal = matrix.diagonal().tolist()
+array_of_left_diagonal = matrix.diagonal().tolist()
 
 np.fill_diagonal(matrix, np.fliplr(matrix).diagonal())
-np.fill_diagonal(np.fliplr(matrix), array_of_diagonal)
+np.fill_diagonal(np.fliplr(matrix), array_of_left_diagonal)
 
 print("Output Matrix :-")
 print(matrix)
